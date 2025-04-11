@@ -34,6 +34,13 @@ class CricketPlayerSearch {
             '1.3',
             true // ← Load in footer
         );
+
+        wp_enqueue_style(
+            'cps-style',
+            plugins_url('css/style.css', __FILE__),
+            [],
+            '1.3'
+        );
         
         wp_localize_script('cps-script', 'cps_ajax', [
             'ajax_url' => admin_url('admin-ajax.php'),
