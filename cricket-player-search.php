@@ -11,7 +11,7 @@ Author: Your Name
 defined('ABSPATH') or die('Direct access not allowed');
 
 class CricketPlayerSearch {
-    private $api_key = '23853bc0-52f1-498c-985e-2faa764e23c4';
+    private $api_key = '';
     
     public function __construct() {
         add_action('wp_head', function() {
